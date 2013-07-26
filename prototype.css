@@ -609,6 +609,23 @@ main p {
 }
 
 /**
+ * Comment List and Form
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_comments\.scss}line{font-family:\000033}}
+.commentlist img {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_comments\.scss}line{font-family:\000037}}
+.commentlist .comment-container {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_comments\.scss}line{font-family:\0000312}}
+.comment-form {
+  clear: both;
+}
+
+/**
  * Widgets
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\000031}}
