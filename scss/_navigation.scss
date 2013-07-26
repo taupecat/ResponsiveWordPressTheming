@@ -14,14 +14,6 @@
   background-color: $red;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   position: relative;
-
-  background-image: -moz-linear-gradient(top, #951c1c 0%, $red 100%); /* FF3.6+ */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#951c1c), color-stop(100%,$red)); /* Chrome,Safari4+ */
-  background-image: -webkit-linear-gradient(top, #951c1c 0%, $red 100%); /* Chrome10+,Safari5.1+ */
-  background-image: -o-linear-gradient(top, #951c1c 0%, $red 100%); /* Opera 11.10+ */
-  background-image: -ms-linear-gradient(top, #951c1c 0%, $red 100%); /* IE10+ */
-  background-image: linear-gradient(to bottom,  #951c1c 0%, $red 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#951c1c', endColorstr='#{$red}',GradientType=0 ); /* IE6-8 */
 }
 
 nav[role="navigation"] a {
@@ -38,6 +30,14 @@ nav[role="navigation"] .toggle-menu {
   height: 1.77777777777778em; /* 32px / 18px */
   line-height: 1.77777777777778em; /* 32px / 18px */
 
+  background-image: -moz-linear-gradient(top, #951c1c 0%, $red 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#951c1c), color-stop(100%,$red)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #951c1c 0%, $red 100%); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top, #951c1c 0%, $red 100%); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #951c1c 0%, $red 100%); /* IE10+ */
+  background-image: linear-gradient(to bottom,  #951c1c 0%, $red 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#951c1c', endColorstr='#{$red}',GradientType=0 ); /* IE6-8 */
+
   @media only all and (min-width: $bp-medium) {
     display: none;
   }
@@ -52,13 +52,20 @@ nav[role="navigation"] .toggle-menu:after {
   vertical-align: bottom;
 }
 
-nav[role="navigation"] ul {
-  background-color: $red;
+nav[role="navigation"] .toggle-menu.open:after {
+  content: "\f432";
+}
+
+nav[role="navigation"] .primary-navigation-container {
   display: none;
 
   @media only all and (min-width: $bp-medium) {
     display: block;
   }
+}
+
+nav[role="navigation"] ul {
+  background-color: $red;
 }
 
 nav[role="navigation"] li {

@@ -29,7 +29,8 @@ main {
 .archive-title {
   font-size: 1.53846153846154em; /* 20px / 13px */
   font-weight: 600;
-  margin-bottom: 2.6em; /* 52px / 20px */
+  margin: 20px 0 32px;
+  margin: cr(20px) 0 cr(32px);
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
 }
@@ -44,12 +45,14 @@ main {
   }
 
   .entry-title {
-    margin: 0.5em 0;
+    margin: 1em 0;
+    text-align: center;
   }
 
   .content-meta {
     font-size: 0.92307692307692em; /* 12px / 13px */
     font-weight: 700;
+    line-height: 1.5;
     margin: 0.5em 0;
   }
 }
