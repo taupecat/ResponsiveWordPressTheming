@@ -25,7 +25,7 @@
  */
 
 footer[role="contentinfo"] {
-  @extend .clearfix;
+  @extend .clearfix !optional;
 
   background-color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -65,5 +65,18 @@ footer[role="contentinfo"] {
     float: left;
     margin: 0 cp(10px, 640px) ce(10px, 13px) 0;
     width: cp(210px, 640px);
+  }
+}
+
+@media only all and (min-width: $bp-large) {
+  .sidebar-primary {
+    margin: 0 cp(10px, 1024px) ce(10px, 13px) 0;
+    width: cp(210px, 1024px);
+  }
+
+  .sidebar-secondary {
+    float: left;
+    margin: 0 0 ce(10px, 13px) cp(10px, 1024px);
+    width: cp(210px, 1024px);
   }
 }

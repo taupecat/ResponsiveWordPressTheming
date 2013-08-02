@@ -4,6 +4,9 @@
  * Compass CSS3 Mixins
  */
 /**
+ * My Sass-Responsive project from GitHub
+ */
+/**
  * Sass Variables
  * Define some of our most commonly
  * used strings as variables.
@@ -35,7 +38,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000318}}
+/* line 18, scss/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,35 +61,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000328}}
+/* line 28, scss/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, main, menu, nav, section {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000331}}
+/* line 31, scss/_reset.scss */
 body {
   line-height: 1.2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000334}}
+/* line 34, scss/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000337}}
+/* line 37, scss/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000341}}
+/* line 41, scss/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_reset\.scss}line{font-family:\0000345}}
+/* line 45, scss/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -96,7 +99,7 @@ table {
  * Global Properties
  */
 /* Box Sizing */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\000033}}
+/* line 3, scss/_global.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -104,53 +107,50 @@ table {
 }
 
 /* Fonts */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000311}}
+/* line 11, scss/_global.scss */
 html {
-  font: 81.25% "Open Sans", sans-serif;
+  font: 81.25%/1.2 "Open Sans", sans-serif;
   /* 13px / 16px */
 }
 
 /* Body */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000317}}
+/* line 17, scss/_global.scss */
 body {
   background: #877865 url(/images/background.jpg);
 }
 
 /* Accessibility */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000323}}
+/* line 23, scss/_global.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
 
 /* Micro Clearfix (from Nicolas Gallagher) */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000331}}
-.clearfix:before, header[role="banner"]:before, .nav-next-previous:before, footer[role="contentinfo"]:before,
-.clearfix:after,
-header[role="banner"]:after,
-.nav-next-previous:after,
-footer[role="contentinfo"]:after {
+/* line 31, scss/_global.scss */
+header[role="banner"]:before,
+header[role="banner"]:after {
   content: '';
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000336}}
-.clearfix:after, header[role="banner"]:after, .nav-next-previous:after, footer[role="contentinfo"]:after {
+/* line 36, scss/_global.scss */
+header[role="banner"]:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000340}}
-.clearfix, header[role="banner"], .nav-next-previous, footer[role="contentinfo"] {
+/* line 40, scss/_global.scss */
+header[role="banner"] {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
 }
 
 /* Links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000346}}
+/* line 46, scss/_global.scss */
 a {
   color: #771717;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_global\.scss}line{font-family:\0000349}}
+/* line 49, scss/_global.scss */
 a:hover, a:active, a:focus {
   color: #5C1111;
 }
@@ -158,84 +158,101 @@ a:hover, a:active, a:focus {
 /**
  * Site Header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\000031}}
+/* line 1, scss/_header.scss */
 header[role="banner"] {
   background: url(http://lorempixel.com/320/255/nature/2) no-repeat center center;
   background-size: cover;
-  line-height: 1.2;
   padding: 2em 18.75%;
-  /* 26px / 13px; 60px / 320px */
   text-align: center;
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\000031}}
+  /* line 1, scss/_header.scss */
   header[role="banner"] {
     background-image: url(http://lorempixel.com/640/255/nature/2/);
     padding: 0;
     text-align: left;
   }
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000317}}
+@media only all and (min-width: 900px) {
+  /* line 1, scss/_header.scss */
+  header[role="banner"] {
+    background-image: url(http://lorempixel.com/1024/255/nature/2/);
+    background-position: center bottom;
+    background-size: cover;
+  }
+}
+/* line 21, scss/_header.scss */
 header[role="banner"] a {
   color: #FFFFFF;
   text-decoration: none;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000322}}
+/* line 26, scss/_header.scss */
 header[role="banner"] .logo {
   display: block;
-  margin: 0 auto 2.30769230769231em;
-  /* 30px / 13px */
+  margin: 0 auto 2.30769em;
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000322}}
+  /* line 26, scss/_header.scss */
   header[role="banner"] .logo {
     float: left;
-    margin: 1.92307692307692em 3.90625%;
+    margin: 1.92308em 3.90625%;
   }
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000333}}
-header[role="banner"] h1,
-header[role="banner"] .subhead {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000337}}
-header[role="banner"] h1 {
-  font-size: 2em;
-  /* 26px / 13px */
-  margin-bottom: 0.34615384615385em;
-  /* 9px / 26px */
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000337}}
-  header[role="banner"] h1 {
-    font-size: 2.30769230769231em;
-    /* 30px / 13px */
-    margin-top: 1.46666666666667em;
-    /* 44px / 30px */
+  /* line 37, scss/_header.scss */
+  header[role="banner"] .site-branding {
+    float: left;
   }
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000347}}
-header[role="banner"] .subhead {
-  font-size: 1.23076923076923em;
+/* line 42, scss/_header.scss */
+header[role="banner"] .site-title, header[role="banner"] .site-description {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+}
+/* line 46, scss/_header.scss */
+header[role="banner"] .site-title {
+  font-size: 2em;
+  margin-bottom: 0.34615em;
+}
+@media only all and (min-width: 600px) {
+  /* line 46, scss/_header.scss */
+  header[role="banner"] .site-title {
+    font-size: 2.30769em;
+    margin-top: 1.46667em;
+  }
+}
+/* line 56, scss/_header.scss */
+header[role="banner"] .site-description {
+  font-size: 1.23077em;
   /* 16px / 13px */
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_header\.scss}line{font-family:\0000347}}
-  header[role="banner"] .subhead {
-    font-size: 1.53846153846154em;
+  /* line 56, scss/_header.scss */
+  header[role="banner"] .site-description {
+    font-size: 1.53846em;
     /* 20px / 13px */
+    margin-left: 1em;
   }
+}
+
+/* line 67, scss/_header.scss */
+.navbar {
+  display: none;
+}
+
+/* line 71, scss/_header.scss */
+#content {
+  display: none;
+}
+
+/* line 75, scss/_header.scss */
+#colophon {
+  display: none;
 }
 
 /**
  * Primary Navigation and Site Search
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\000031}}
+/* line 1, scss/_navigation.scss */
 .screen-reader-text.skip-link:focus {
   background-color: #771717;
   clip: auto;
@@ -251,14 +268,14 @@ header[role="banner"] .subhead {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000313}}
+/* line 13, scss/_navigation.scss */
 .navbar {
   background-color: #771717;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000319}}
+/* line 19, scss/_navigation.scss */
 nav[role="navigation"] a {
   color: #FFFFFF;
   display: block;
@@ -271,7 +288,7 @@ nav[role="navigation"] a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000328}}
+/* line 28, scss/_navigation.scss */
 nav[role="navigation"] .toggle-menu {
   font-size: 1.38461538461538em;
   /* 18px / 13px */
@@ -295,13 +312,13 @@ nav[role="navigation"] .toggle-menu {
   /* IE6-8 */
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000328}}
+  /* line 28, scss/_navigation.scss */
   nav[role="navigation"] .toggle-menu {
     display: none;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000346}}
+/* line 46, scss/_navigation.scss */
 nav[role="navigation"] .toggle-menu:after {
   content: "\f431";
   display: inline-block;
@@ -311,50 +328,50 @@ nav[role="navigation"] .toggle-menu:after {
   vertical-align: bottom;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000355}}
+/* line 55, scss/_navigation.scss */
 nav[role="navigation"] .toggle-menu.open:after {
   content: "\f432";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000359}}
+/* line 59, scss/_navigation.scss */
 nav[role="navigation"] .primary-navigation-container {
   display: none;
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000359}}
+  /* line 59, scss/_navigation.scss */
   nav[role="navigation"] .primary-navigation-container {
     display: block;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000367}}
+/* line 67, scss/_navigation.scss */
 nav[role="navigation"] ul {
   background-color: #771717;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000371}}
+/* line 71, scss/_navigation.scss */
 nav[role="navigation"] li {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000371}}
+  /* line 71, scss/_navigation.scss */
   nav[role="navigation"] li {
     float: left;
     position: relative;
     white-space: nowrap;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000379}}
+  /* line 79, scss/_navigation.scss */
   nav[role="navigation"] li:hover > ul {
     display: block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000383}}
+  /* line 83, scss/_navigation.scss */
   nav[role="navigation"] li a {
     display: block;
     padding: 0 1em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000393}}
+/* line 93, scss/_navigation.scss */
 nav[role="navigation"] ul a:hover,
 nav[role="navigation"] ul a:active,
 nav[role="navigation"] ul a:focus,
@@ -363,51 +380,51 @@ nav[role="navigation"] li.current_page_item > a {
 }
 
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\0000398}}
+  /* line 98, scss/_navigation.scss */
   nav[role="navigation"] ul ul {
     box-shadow: -2px 0 2px rgba(0, 0, 0, 0.2);
     display: none;
     position: absolute;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003103}}
+  /* line 103, scss/_navigation.scss */
   nav[role="navigation"] ul ul li {
     float: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003106}}
+  /* line 106, scss/_navigation.scss */
   nav[role="navigation"] ul ul li a {
     display: block;
     min-width: 180px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003112}}
+  /* line 112, scss/_navigation.scss */
   nav[role="navigation"] ul ul ul {
     position: absolute;
     top: 0;
     left: 100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003120}}
+/* line 120, scss/_navigation.scss */
 nav[role="navigation"] ul ul a {
   padding: 0 7.5%;
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003120}}
+  /* line 120, scss/_navigation.scss */
   nav[role="navigation"] ul ul a {
     padding: 0 1em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003128}}
+/* line 128, scss/_navigation.scss */
 nav[role="navigation"] ul ul ul a {
   padding: 0 11.25%;
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003128}}
+  /* line 128, scss/_navigation.scss */
   nav[role="navigation"] ul ul ul a {
     padding: 0 1em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003136}}
+/* line 136, scss/_navigation.scss */
 .toggle-search {
   color: #FFFFFF;
   display: block;
@@ -426,7 +443,7 @@ nav[role="navigation"] ul ul ul a {
   white-space: nowrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003151}}
+/* line 151, scss/_navigation.scss */
 form[role="search"] {
   background-color: #771717;
   display: none;
@@ -437,12 +454,12 @@ form[role="search"] {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003161}}
+/* line 161, scss/_navigation.scss */
 form[role="search"] label {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003165}}
+/* line 165, scss/_navigation.scss */
 form[role="search"] input {
   border: none;
   box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.4) inset;
@@ -450,14 +467,14 @@ form[role="search"] input {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003172}}
+/* line 172, scss/_navigation.scss */
 form[role="search"] input[type="search"] {
   border-radius: 100em;
   margin-right: 1em;
   padding: 4px 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003178}}
+/* line 178, scss/_navigation.scss */
 form[role="search"] input[type="submit"] {
   background-color: #dfdfdf;
   border: 1px solid #d0d0d0;
@@ -472,7 +489,7 @@ form[role="search"] input[type="submit"] {
   transition: all 0.2s ease-out;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_navigation\.scss}line{font-family:\00003196}}
+/* line 196, scss/_navigation.scss */
 form[role="search"] input[type="submit"]:hover,
 form[role="search"] input[type="submit"]:active,
 form[role="search"] input[type="submit"]:focus {
@@ -482,7 +499,7 @@ form[role="search"] input[type="submit"]:focus {
 /**
  * Main Content
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\000031}}
+/* line 1, scss/_main.scss */
 main {
   background-color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -490,21 +507,29 @@ main {
   padding: 1.38461538461538em 3.75%;
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\000031}}
+  /* line 1, scss/_main.scss */
   main {
     float: right;
     margin-bottom: 0.76923em;
+    padding: 0.76923em 1.5625%;
     width: 65.625%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000313}}
+@media only all and (min-width: 900px) {
+  /* line 1, scss/_main.scss */
+  main {
+    float: left;
+    width: 57.03125%;
+  }
+}
+/* line 19, scss/_main.scss */
 main h1 {
   font-size: 1.38461538461538em;
   /* 18px / 13px */
   font-weight: bold;
   margin-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000319}}
+/* line 25, scss/_main.scss */
 main p {
   margin: 0.5em 0;
 }
@@ -512,33 +537,33 @@ main p {
 /**
  * Archive Page Styling
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000329}}
+/* line 35, scss/_main.scss */
 .archive-title {
   font-size: 1.53846153846154em;
   /* 20px / 13px */
   font-weight: 600;
   margin: 20px 0 32px;
-  margin: 1.53846rem 0 2.46154rem;
+  margin: 1.25rem 0 2rem;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000338}}
+/* line 44, scss/_main.scss */
 .post {
   margin-bottom: 4em;
   /* Featured Image */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000342}}
+/* line 48, scss/_main.scss */
 .post .attachment-post-thumbnail {
   display: block;
   margin: 1em auto 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000347}}
+/* line 53, scss/_main.scss */
 .post .entry-title {
   margin: 1em 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000352}}
+/* line 58, scss/_main.scss */
 .post .content-meta {
   font-size: 0.92307692307692em;
   /* 12px / 13px */
@@ -550,7 +575,7 @@ main p {
 /**
  * Archive Next/Previous Navigation
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000365}}
+/* line 71, scss/_main.scss */
 .nav-next-previous a.nav-previous:after, .nav-next-previous a.nav-next:before {
   background-color: #85745f;
   border-radius: 100em;
@@ -562,48 +587,60 @@ main p {
   font-style: normal;
   height: 1.11111111111111em;
   /* 40px / 36px */
+  left: 50%;
   line-height: 1.11111111111111em;
   /* 40px / 36px */
+  margin-left: -0.55556em;
+  position: absolute;
   text-align: center;
+  top: -100%;
   width: 1.11111111111111em;
   /* 40px / 36px */
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000382}}
+/* line 91, scss/_main.scss */
+.nav-next-previous {
+  margin-top: 5em;
+}
+/* line 95, scss/_main.scss */
 .nav-next-previous a {
   color: #85745f;
   display: block;
   font-size: 1.38461538461538em;
   /* 18px / 13px */
   font-style: italic;
-  line-height: 2.22222222222222em;
-  /* 40px / 18px */
+  line-height: 2;
+  position: relative;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000389}}
+/* line 105, scss/_main.scss */
 .nav-next-previous a.nav-previous {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\0000392}}
+/* line 108, scss/_main.scss */
 .nav-next-previous a.nav-previous:after {
   content: '\f429';
-  float: right;
-  margin-left: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\00003100}}
+/* line 114, scss/_main.scss */
 .nav-next-previous a.nav-next {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\00003103}}
+/* line 117, scss/_main.scss */
 .nav-next-previous a.nav-next:before {
   content: '\f430';
-  float: left;
-  margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\00003112}}
+/* line 123, scss/_main.scss */
 .nav-next-previous a:hover, .nav-next-previous a:active, .nav-next-previous a:focus {
   color: #771717;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_main\.scss}line{font-family:\00003115}}
+/* line 126, scss/_main.scss */
 .nav-next-previous a:hover:before, .nav-next-previous a:hover:after, .nav-next-previous a:active:before, .nav-next-previous a:active:after, .nav-next-previous a:focus:before, .nav-next-previous a:focus:after {
   background-color: #771717;
 }
@@ -611,16 +648,16 @@ main p {
 /**
  * Comment List and Form
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_comments\.scss}line{font-family:\000033}}
+/* line 3, scss/_comments.scss */
 .commentlist img {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_comments\.scss}line{font-family:\000037}}
+/* line 7, scss/_comments.scss */
 .commentlist .comment-container {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_comments\.scss}line{font-family:\0000312}}
+/* line 12, scss/_comments.scss */
 .comment-form {
   clear: both;
 }
@@ -628,7 +665,7 @@ main p {
 /**
  * Widgets
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\000031}}
+/* line 1, scss/_widgets.scss */
 .widget {
   padding: 1em 3.75%;
 }
@@ -636,14 +673,14 @@ main p {
 /**
  * Primary and Secondary Sidebars
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000310}}
+/* line 10, scss/_widgets.scss */
 .sidebar .widget {
   background-color: #e9e2dd;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   margin-bottom: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000316}}
+/* line 16, scss/_widgets.scss */
 .sidebar .widget h1 {
   color: #514530;
   font-size: 1.23076923076923em;
@@ -654,7 +691,7 @@ main p {
 /**
  * Footer Widget Areas
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000327}}
+/* line 27, scss/_widgets.scss */
 footer[role="contentinfo"] {
   background-color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -662,23 +699,23 @@ footer[role="contentinfo"] {
   /* 20px / 13px */
 }
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000327}}
+  /* line 27, scss/_widgets.scss */
   footer[role="contentinfo"] {
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000337}}
+  /* line 37, scss/_widgets.scss */
   footer[role="contentinfo"] .footer-widget-area {
     float: left;
     margin-right: 1.5625%;
     width: 49.21875%;
     margin-bottom: 10px;
-    margin-bottom: 0.76923rem;
+    margin-bottom: 0.625rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000344}}
+  /* line 44, scss/_widgets.scss */
   footer[role="contentinfo"] .footer-widget-area:nth-of-type(3) {
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000348}}
+  /* line 48, scss/_widgets.scss */
   footer[role="contentinfo"] .footer-widget-area:nth-of-type(2), footer[role="contentinfo"] .footer-widget-area:nth-of-type(4) {
     margin-right: 0;
   }
@@ -690,10 +727,25 @@ footer[role="contentinfo"] {
  * medium views)
  */
 @media only all and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/web\/prototype\/Chapter-05\/scss\/_widgets\.scss}line{font-family:\0000362}}
+  /* line 62, scss/_widgets.scss */
   .sidebars {
     float: left;
     margin: 0 1.5625% 0.76923em 0;
     width: 32.8125%;
+  }
+}
+
+@media only all and (min-width: 900px) {
+  /* line 72, scss/_widgets.scss */
+  .sidebar-primary {
+    margin: 0 0.97656% 0.76923em 0;
+    width: 20.50781%;
+  }
+
+  /* line 77, scss/_widgets.scss */
+  .sidebar-secondary {
+    float: left;
+    margin: 0 0 0.76923em 0.97656%;
+    width: 20.50781%;
   }
 }

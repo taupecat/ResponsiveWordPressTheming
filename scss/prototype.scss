@@ -4,6 +4,11 @@
 @import "compass/css3";
 
 /**
+ * My Sass-Responsive project from GitHub
+ */
+@import "responsive";
+
+/**
  * Sass Variables
  * Define some of our most commonly
  * used strings as variables.
@@ -18,6 +23,7 @@ $taupe: #85745F;
 /* Responsive Breakpoints */
 
 $bp-medium: 600px;
+$bp-large: 900px;
 
 /* Default Font Size */
 

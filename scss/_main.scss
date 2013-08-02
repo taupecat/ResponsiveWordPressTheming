@@ -7,7 +7,13 @@ main {
   @media only all and (min-width: $bp-medium) {
     float: right;
     margin-bottom: ce(10px, 13px);
+    padding: ce(10px, 13px) cp(10px, 640px);
     width: cp(420px, 640px);
+  }
+
+  @media only all and (min-width: $bp-large) {
+    float: left;
+    width: cp(584px, 1024px);
   }
 
   h1 {
@@ -71,20 +77,30 @@ main {
   font-size: 2em; /* 36px / 18px */
   font-style: normal;
   height: 1.11111111111111em; /* 40px / 36px */
+  left: 50%;
   line-height: 1.11111111111111em; /* 40px / 36px */
+  margin-left: ce(-20px, 36px);
+  position: absolute;
   text-align: center;
+  top: -100%;
   width: 1.11111111111111em; /* 40px / 36px */
+
+  @include transition(background-color 0.2s linear);
 }
 
 .nav-next-previous {
-  @extend .clearfix;
+  @extend .clearfix !optional;
+  margin-top: 5em;
 
   a {
     color: $taupe;
     display: block;
     font-size: 1.38461538461538em; /* 18px / 13px */
     font-style: italic;
-    line-height: 2.22222222222222em; /* 40px / 18px */
+    line-height: 2;
+    position: relative;
+
+    @include transition(color 0.2s linear);
 
     &.nav-previous {
       float: right;
@@ -92,8 +108,6 @@ main {
       &:after {
         @extend %nav-next-previous-a-psuedo-elements;
         content: '\f429';
-        float: right;
-        margin-left: 10px;
       }
     }
 
@@ -102,10 +116,7 @@ main {
 
       &:before {
         @extend %nav-next-previous-a-psuedo-elements;
-
         content: '\f430';
-        float: left;
-        margin-right: 10px;
       }
     }
 

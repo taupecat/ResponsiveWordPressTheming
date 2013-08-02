@@ -1,53 +1,77 @@
 header[role="banner"] {
-  @extend .clearfix;
+	@extend %clearfix;
 
-  background: url(http://lorempixel.com/320/255/nature/2) no-repeat center center;
-  background-size: cover;
-  line-height: 1.2;
-  padding: 2em 18.75%; /* 26px / 13px; 60px / 320px */
-  text-align: center;
+	background: url(http://lorempixel.com/320/255/nature/2) no-repeat center center;
+	background-size: cover;
+	padding: ce(26px, 13px) cp(60px, 320px);
+	text-align: center;
 
-  @media only all and (min-width: $bp-medium) {
-    background-image: url(http://lorempixel.com/640/255/nature/2/);
-    padding: 0;
-    text-align: left;
-  }
+	@include bp(medium) {
+		background-image: url(http://lorempixel.com/640/255/nature/2/);
+		padding: 0;
+		text-align: left;
+	}
+
+	@include bp(large) {
+		background-image: url(http://lorempixel.com/1024/255/nature/2/);
+		background-position: center bottom;
+		background-size: cover;
+	}
+
+	a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.logo {
+		display: block;
+		margin: 0 auto ce(30px, 13px);
+
+		@include bp(medium) {
+			float: left;
+			margin: ce(25px, 13px) cp(25px, 640px);
+		}
+	}
+
+	@include bp(medium) {
+		.site-branding {
+			float: left;
+		}
+	}
+
+	.site-title, .site-description {
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+	}
+
+	.site-title {
+		font-size: ce(26px, 13px);
+		margin-bottom: ce(9px, 26px);
+
+		@include bp(medium) {
+			font-size: ce(30px, 13px);
+			margin-top: ce(44px, 30px);
+		}
+	}
+
+	.site-description {
+		font-size: ce(16px, 13px); /* 16px / 13px */
+
+		@include bp(medium) {
+			font-size: ce(20px, 13px); /* 20px / 13px */
+			margin-left: 1em;
+		}
+	}
 }
 
-header[role="banner"] a {
-  color: #FFFFFF;
-  text-decoration: none;
+
+.navbar {
+	display: none;
 }
 
-header[role="banner"] .logo {
-  display: block;
-  margin: 0 auto 2.30769230769231em; /* 30px / 13px */
-
-    @media only all and (min-width: $bp-medium) {
-      float: left;
-      margin: 1.92307692307692em 3.90625%;
-    }
+#content {
+	display: none;
 }
 
-header[role="banner"] h1,
-header[role="banner"] .subhead {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-}
-
-header[role="banner"] h1 {
-  font-size: 2em; /* 26px / 13px */
-  margin-bottom: 0.34615384615385em; /* 9px / 26px */
-
-  @media only all and (min-width: $bp-medium) {
-    font-size: 2.30769230769231em; /* 30px / 13px */
-    margin-top: 1.46666666666667em; /* 44px / 30px */
-  }
-}
-
-header[role="banner"] .subhead {
-  font-size: 1.23076923076923em; /* 16px / 13px */
-
-  @media only all and (min-width: $bp-medium) {
-    font-size: 1.53846153846154em; /* 20px / 13px */
-  }
+#colophon {
+	display: none;
 }
