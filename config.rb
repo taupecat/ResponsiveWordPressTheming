@@ -10,6 +10,7 @@ fonts_dir = "fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
+# output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
@@ -23,4 +24,4 @@ fonts_dir = "fonts"
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass scss scss && rm -rf sass && mv scss sass
-sass_options = {:debug => true}
+sass_options = {:debug_info => true}

@@ -9,7 +9,8 @@
 /* Fonts */
 
 html {
-	font: 81.25%/1.2 "Open Sans", sans-serif; /* 13px / 16px */
+	font: cp($default-font-size, 16px) $opensans;
+	line-height: 1.2;
 }
 
 /* Body */
@@ -20,25 +21,24 @@ body {
 
 /* Accessibility */
 
-.screen-reader-text {
+.screen-reader-text a {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute;
 }
 
 /* Micro Clearfix (from Nicolas Gallagher) */
 
-%clearfix:before,
-%clearfix:after {
-	content: '';
-	display: table;
-}
-
-%clearfix:after {
-	clear: both;
-}
-
 %clearfix {
-	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	&:before, &:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+
+	zoom: 1; /* Fore IE 6/7 (trigger hasLayout) */
 }
 
 /* Links */

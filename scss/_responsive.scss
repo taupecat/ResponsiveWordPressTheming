@@ -4,7 +4,7 @@
 // Because this is so important in many of your calculations as a context,
 // keep your default font size stored as a variable.
 
-$default-font-size: 16px;
+$default-font-size: 13px;
 
 // Breakpoints
 
@@ -13,6 +13,8 @@ $default-font-size: 16px;
 
 // Example:
 // $breakpoint-large: "min-width: 1350px";
+$bp-medium: 600px;
+$bp-large: 900px;
 
 
 // Contexts
@@ -73,8 +75,8 @@ $default-font-size: 16px;
 @mixin breakpoint($breakpoint, $media: all) {
 
 	// Change these values as required
-	$medium: 600px;
-	$large: 900px;
+	$medium: $bp-medium;
+	$large: $bp-large;
 	// $x-large: 1280px;
 
 	@if $breakpoint == medium {
@@ -136,8 +138,6 @@ $default-font-size: 16px;
 
 // calc-rem: calculate the rem value based on the desired pixel 
 // value versus a context value, usually the default font size
-$default-font-size: 16px !default;
-
 @function calc-rem( $target, $context: $default-font-size ) {
 	@return $target / $context * 1rem;
 }

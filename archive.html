@@ -1,235 +1,317 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Responsive WordPress Theme Prototype | Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="prototype.css">
+	<title>Responsive WordPress Theme Prototype | Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="prototype.css">
 </head>
 
 <body class="archive">
 
-<!-- Begin Site Banner -->
+<div>
 
-<header role="banner">
-  <a href="/">
-    <img src="http://placehold.it/123x123&amp;text=[logo]" class="logo">
-    <h1>Our Great Site</h1>
-    <div class="subhead">Just another responsive WordPress theme.</div>
-  </a>
-</header>
+	<!-- Begin Site Header -->
 
-<!-- End Site Banner -->
+	<header id="masthead" class="site-header" role="banner">
 
-<!-- Begin Navigation/Search Bar -->
+		<a href="/" rel="home">
 
-<div class="navbar clearfix">
+			<img src="http://placehold.it/123x123&amp;text=[logo]" class="logo" width="123" height="123" style="background-color: rgba(128, 0, 128, 0.7);">
 
-  <!-- Begin Primary Navigation -->
+			<div class="site-branding">
 
-  <nav class="primary-navigation" role="navigation">
-    <a href="#!" id="toggle-primary-nav" class="toggle-menu">Menu</a>
-    <a class="screen-reader-text skip-link" href="#content">Skip to content.</a>
+				<h1 class="site-title">Our Great Site</h1>
 
-    <div class="primary-navigation-container">
-      <ul>
-        <li><a href="#!">Menu Option 1</a></li>
-        <li class="current_page_item"><a href="#!">Menu Option 2</a></li>
-        <li><a href="#!">Menu Option 3</a>
-          <ul class="sub-menu">
-            <li><a href="#!">Sub Option 1</a></li>
-            <li><a href="#!">Sub Option 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#!">Menu Option 4</a></li>
-      </ul>
-    </div>
-  </nav>
+				<div class="site-description">Just another responsive WordPress theme.</div>
 
-  <!-- End Primary Navigation -->
+			</div>
 
-  <!-- Begin Search Form -->
+		</a>
 
-  <a href="#!" class="toggle-search"></a>
+		<!-- Begin Navigation/Search Bar -->
 
-  <form role="search" method="get" class="searchform" action="http://prototype.local/">
-    <label>
-      <span class="screen-reader-text">Search for:</span>
-      <input type="search" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
-    </label>
-    <input type="submit" class="searchsubmit" value="Search" />
-  </form>
+		<div class="navbar">
 
-  <!-- End Search Form -->
+			<div class="screen-reader-text skip-link"><a href="#content">Skip to content</a></div>
 
-</div>
+			<!-- Begin Primary Navigation -->
 
-<!-- End Navigation/Search Bar -->
+			<nav id="site-navigation" class="primary-navigation" role="navigation">
 
-<!-- Begin Main Content -->
+				<a href="#!" id="toggle-primary-nav" class="menu-toggle">Menu</a>
 
-<main id="content" role="main">
+				<div id="primary-navigation-container" class="primary-navigation-container menu">
 
-  <!-- Archive Page Header -->
+					<ul>
+						<li class="current_page_item"><a href="http://manning.local/" title="Home">Home</a></li>
+						<li class="page_item"><a href="#!">Menu Option 1</a>
+							<ul class="children">
+								<li class="page_item"><a href="#!">Sub Option 1</a></li>
+								<li class="page_item"><a href="#!">Sub Option 2</a></li>
+							</ul>
+						</li>
+						<li class="page_item"><a href="#!">Menu Option 2</a>
+							<ul class="children">
+								<li class="page_item"><a href="#!">Sub Option 1</a></li>
+								<li class="page_item"><a href="#!">Sub Option 2</a></li>
+							</ul>
+						</li>
+						<li class="page_item"><a href="#!">Menu Option 3</a>
+							<ul class="children">
+								<li class="page_item"><a href="#!">Sub Option 1</a></li>
+								<li class="page_item"><a href="#!">Sub Option 2</a>
+									<ul class="children">
+										<li class="page_item"><a href="#!">Sub Sub Option 1</a></li>
+										<li class="page_item"><a href="#!">Sub Sub Option 2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="page_item"><a href="#!">Menu Option 4</a>
+							<ul class="children">
+								<li class="page_item"><a href="#!">Sub Option 1</a></li>
+								<li class="page_item"><a href="#!">Sub Option 2</a></li>
+							</ul>
+						</li>
+					</ul>
 
-  <h1 class="archive-title">Archives for "Category"</h1>
+				</div>
 
-  <!-- Begin First Post Excerpt -->
+				<!-- // #primary-navigation-container -->
 
-  <article class="post">
+			</nav>
 
-    <img src="http://placekitten.com/g/150/150" alt="Adorable placekitten." class="attachment-post-thumbnail">
+			<!-- End Primary Navigation -->
 
-    <h1 class="entry-title"><a href="#!">Posting Number One</a></h1>
+			<!-- Begin Search Form -->
 
-    <!-- Begin Top Meta Information -->
+			<a href="#!" class="toggle-search"></a>
 
-    <div class="content-meta">
-      <span class="content-meta-author"><a href="#!">Jane Smith</a></span> »
-      <span class="content-meta-date"><a href="#!">May 14, 2013</a></span> »
-      <span class="content-meta-cateogry"><a href="#!">Category</a></span>
-    </div>
+			<form role="search" method="get" class="searchform" action="http://prototype.local/">
 
-    <!-- End Top Meta Information -->
+				<label>
 
-    <!-- Begin Post Excerpt Content -->
+					<span class="screen-reader-text">Search for:</span>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu…</p>
+					<input type="search" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
 
-    <!-- End Post Excerpt Content -->
+				</label>
 
-    <!-- Begin Bottom Meta Information -->
+				<input type="submit" class="searchsubmit" value="Search" />
 
-    <div class="content-meta">
-      <span class="content-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span> with
-      <span class="content-meta-comments"><a href="#!">8 comments</a></span>.
-    </div>
+			</form>
 
-    <!-- End Bottom Meta Information -->
+			<!-- End Search Form -->
 
-  </article>
+		</div>
 
-  <!-- End First Post Excerpt -->
+		<!-- End Navigation/Search Bar -->
 
-  <!-- Begin Second Post Excerpt -->
+	</header>
 
-  <article class="post">
+	<!-- End Site Header -->
 
-    <!-- Oops! No featured image on this post. -->
+	<div id="content" class="site-content">
 
-    <h1 class="entry-title"><a href="#!">Posting Number Two</a></h1>
+		<!-- Begin Main Content -->
 
-    <!-- Begin Top Meta Information -->
+		<div id="primary" class="content-area">
 
-    <div class="content-meta">
-      <span class="content-meta-author"><a href="#!">Jane Smith</a></span> »
-      <span class="content-meta-date"><a href="#!">May 14, 2013</a></span> »
-      <span class="content-meta-cateogry"><a href="#!">Category</a></span>
-    </div>
+			<main id="main" class="site-main" role="main">
 
-    <!-- End Top Meta Information -->
+				<!-- Archive Page Header -->
 
-    <!-- Begin Post Excerpt Content -->
+				<header class="page-header">
+					<h1 class="page-title">Archives for "Category"</h1>
+				</header>
+				<!-- .page-header -->
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+				<!-- Begin First Post Excerpt -->
 
-    <!-- End Post Excerpt Content -->
+				<article id="post-1178" class="post-1178 post type-post status-publish format-standard">
 
-    <!-- Begin Bottom Meta Information -->
+					<div class="post-thumbnail">
+						<img src="http://placekitten.com/g/150/150" alt="Adorable placekitten." class="attachment-post-thumbnail">
+					</div>
+					<!-- // .post-thumbnail -->
 
-    <div class="content-meta">
-      <span class="content-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span> with
-      <span class="content-meta-comments"><a href="#!">8 comments</a></span>.
-    </div>
+					<header class="entry-header">
 
-    <!-- End Bottom Meta Information -->
+						<h1 class="entry-title"><a href="#!">Posting Number One</a></h1>
 
-  </article>
+						<!-- Begin Top Meta Information -->
 
-  <!-- End Second Post Excerpt -->
+						<div class="entry-meta">
+							<span class="entry-meta-author"><a href="#!">Jane Smith</a></span> »
+							<span class="entry-meta-date"><a href="#!">May 14, 2013</a></span> »
+							<span class="entry-meta-cateogry"><a href="#!">Category</a></span>
+						</div>
 
-  <!-- Begin Third Post Excerpt -->
+						<!-- End Top Meta Information -->
 
-  <article class="post">
+					</header>
+					<!-- // .entry-header -->
 
-    <img src="http://placekitten.com/g/150/150" alt="Adorable placekitten." class="attachment-post-thumbnail">
+					<!-- Begin Post Excerpt Content -->
 
-    <h1 class="entry-title"><a href="#!">Posting Number Three</a></h1>
+					<div class="entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu…</p>
+					</div>
+					<!-- // .entry-content -->
 
-    <!-- Begin Top Meta Information -->
+					<!-- End Post Excerpt Content -->
 
-    <div class="content-meta">
-      <span class="content-meta-author"><a href="#!">Jane Smith</a></span> »
-      <span class="content-meta-date"><a href="#!">May 14, 2013</a></span> »
-      <span class="content-meta-cateogry"><a href="#!">Category</a></span>
-    </div>
+					<!-- Begin Bottom Meta Information -->
 
-    <!-- End Top Meta Information -->
+					<footer class="entry-footer">
 
-    <!-- Begin Post Excerpt Content -->
+						<div class="entry-meta">
+							<span class="entry-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span> with
+							<span class="entry-meta-comments"><a href="#!">8 comments</a></span>.
+						</div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu…</p>
+					</footer>
+					<!-- // .entry-meta -->
 
-    <!-- End Post Excerpt Content -->
+					<!-- End Bottom Meta Information -->
 
-    <!-- Begin Bottom Meta Information -->
+				</article>
 
-    <div class="content-meta">
-      <span class="content-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span>, <a href="#!">tag 4</a>, <a href="#!">tag 5</a>, <a href="#!">tag 6</a></span> with
-      <span class="content-meta-comments"><a href="#!">No comments</a></span>.
-    </div>
+				<!-- End First Post Excerpt -->
 
-    <!-- End Bottom Meta Information -->
+				<!-- Begin Second Post Excerpt -->
 
-  </article>
+				<article class="post">
 
-  <!-- End Third Post Excerpt -->
+		<!-- Oops! No featured image on this post. -->
 
-  <!-- Begin Fourth Post Excerpt -->
+					<header class="entry-header">
 
-  <article class="post">
+						<h1 class="entry-title"><a href="#!">Posting Number Two</a></h1>
 
-    <img src="http://placekitten.com/g/150/150" alt="Adorable placekitten." class="attachment-post-thumbnail">
+						<!-- Begin Top Meta Information -->
 
-    <h1 class="entry-title"><a href="#!">Posting Number Four</a></h1>
+						<div class="entry-meta">
+							<span class="entry-meta-author"><a href="#!">Jane Smith</a></span> »
+							<span class="entry-meta-date"><a href="#!">May 14, 2013</a></span> »
+							<span class="entry-meta-cateogry"><a href="#!">Category</a></span>
+						</div>
 
-    <!-- Begin Top Meta Information -->
+					</header>
+					<!-- // .entry-header -->
 
-    <div class="content-meta">
-      <span class="content-meta-author"><a href="#!">Jane Smith</a></span> »
-      <span class="content-meta-date"><a href="#!">May 14, 2013</a></span> »
-      <span class="content-meta-cateogry"><a href="#!">Category</a>, <a href="#!">A Different Category</a></span>
-    </div>
+					<!-- End Top Meta Information -->
 
-    <!-- End Top Meta Information -->
+					<!-- Begin Post Excerpt Content -->
 
-    <!-- Begin Post Excerpt Content -->
+					<div class="entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+					</div>
+					<!-- // .entry-content -->
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu…</p>
+					<!-- End Post Excerpt Content -->
 
-    <!-- End Post Excerpt Content -->
+					<!-- Begin Bottom Meta Information -->
 
-    <!-- Begin Bottom Meta Information -->
+					<footer class="entry-footer">
 
-    <div class="content-meta">
-      <span class="content-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span> with
-      <span class="content-meta-comments"><a href="#!">8 comments</a></span>.
-    </div>
+						<div class="entry-meta">
+							<span class="entry-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span> with
+							<span class="entry-meta-comments"><a href="#!">8 comments</a></span>.
+						</div>
 
-    <!-- End Bottom Meta Information -->
+					</footer>
+					<!-- // .entry-footer -->
 
-  </article>
+					<!-- End Bottom Meta Information -->
 
-  <!-- End Fourth Post Excerpt -->
+				</article>
 
-  <!-- Begin Bottom Newer/Older Posts Links -->
+				<!-- End Second Post Excerpt -->
 
-  <nav class="nav-next-previous">
-    <a class="nav-previous" href="http://wordpress36/?paged=3">Older posts</a>
-    <a class="nav-next" href="http://wordpress36/">Newer posts</a>
-  </nav><!-- #nav-below -->
+	<!-- Begin Third Post Excerpt -->
 
-  <!-- End Bottom Newer/Older Posts Links -->
+	<article class="post">
+
+		<img src="http://placekitten.com/g/150/150" alt="Adorable placekitten." class="attachment-post-thumbnail">
+
+		<h1 class="entry-title"><a href="#!">Posting Number Three</a></h1>
+
+		<!-- Begin Top Meta Information -->
+
+		<div class="content-meta">
+			<span class="content-meta-author"><a href="#!">Jane Smith</a></span> »
+			<span class="content-meta-date"><a href="#!">May 14, 2013</a></span> »
+			<span class="content-meta-cateogry"><a href="#!">Category</a></span>
+		</div>
+
+		<!-- End Top Meta Information -->
+
+		<!-- Begin Post Excerpt Content -->
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu…</p>
+
+		<!-- End Post Excerpt Content -->
+
+		<!-- Begin Bottom Meta Information -->
+
+		<div class="content-meta">
+			<span class="content-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span>, <a href="#!">tag 4</a>, <a href="#!">tag 5</a>, <a href="#!">tag 6</a></span> with
+			<span class="content-meta-comments"><a href="#!">No comments</a></span>.
+		</div>
+
+		<!-- End Bottom Meta Information -->
+
+	</article>
+
+	<!-- End Third Post Excerpt -->
+
+	<!-- Begin Fourth Post Excerpt -->
+
+	<article class="post">
+
+		<img src="http://placekitten.com/g/150/150" alt="Adorable placekitten." class="attachment-post-thumbnail">
+
+		<h1 class="entry-title"><a href="#!">Posting Number Four</a></h1>
+
+		<!-- Begin Top Meta Information -->
+
+		<div class="content-meta">
+			<span class="content-meta-author"><a href="#!">Jane Smith</a></span> »
+			<span class="content-meta-date"><a href="#!">May 14, 2013</a></span> »
+			<span class="content-meta-cateogry"><a href="#!">Category</a>, <a href="#!">A Different Category</a></span>
+		</div>
+
+		<!-- End Top Meta Information -->
+
+		<!-- Begin Post Excerpt Content -->
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu…</p>
+
+		<!-- End Post Excerpt Content -->
+
+		<!-- Begin Bottom Meta Information -->
+
+		<div class="content-meta">
+			<span class="content-meta-tags">Tagged: <a href="#!">tag 1</a>, <a href="#!">tag 2</a>, <a href="#!">tag 3</a></span> with
+			<span class="content-meta-comments"><a href="#!">8 comments</a></span>.
+		</div>
+
+		<!-- End Bottom Meta Information -->
+
+	</article>
+
+	<!-- End Fourth Post Excerpt -->
+
+	<!-- Begin Bottom Newer/Older Posts Links -->
+
+	<nav class="nav-next-previous">
+		<a class="nav-previous" href="http://wordpress36/?paged=3">Older posts</a>
+		<a class="nav-next" href="http://wordpress36/">Newer posts</a>
+	</nav><!-- #nav-below -->
+
+	<!-- End Bottom Newer/Older Posts Links -->
 
 </main>
 
@@ -239,29 +321,29 @@
 
 <section id="sidebar-primary" class="sidebar">
 
-  <!-- Begin First Sample Widget -->
+	<!-- Begin First Sample Widget -->
 
-  <aside class="widget widget_text">
+	<aside class="widget widget_text">
 
-    <h1>Widget Title</h1>
+		<h1>Widget Title</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-  </aside>
+	</aside>
 
-  <!-- End First Sample Widget -->
+	<!-- End First Sample Widget -->
 
-  <!-- Begin Second Sample Widget -->
+	<!-- Begin Second Sample Widget -->
 
-  <aside class="widget widget_text">
+	<aside class="widget widget_text">
 
-    <h1>Widget Title</h1>
+		<h1>Widget Title</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-  </aside>
+	</aside>
 
-  <!-- End Second Sample Widget -->
+	<!-- End Second Sample Widget -->
 
 </section>
 
@@ -275,11 +357,11 @@
 
 <section id="footer-widget-1" class="footer-widget-area">
 
-  <aside class="widget widget_text">
+	<aside class="widget widget_text">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-  </aside>
+	</aside>
 
 </section>
 
@@ -289,11 +371,11 @@
 
 <section id="footer-widget-2" class="footer-widget-area">
 
-  <aside class="widget widget_text">
+	<aside class="widget widget_text">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-  </aside>
+	</aside>
 
 </section>
 
@@ -303,11 +385,11 @@
 
 <section id="footer-widget-3" class="footer-widget-area">
 
-  <aside class="widget widget_text">
+	<aside class="widget widget_text">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-  </aside>
+	</aside>
 
 </section>
 
@@ -317,11 +399,11 @@
 
 <section id="footer-widget-4" class="footer-widget-area">
 
-  <aside class="widget widget_text">
+	<aside class="widget widget_text">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-  </aside>
+	</aside>
 
 </section>
 

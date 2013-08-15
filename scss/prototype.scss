@@ -1,5 +1,8 @@
 /**
  * Compass CSS3 Mixins
+ * These will automatically create all the vendor-prefixed variations for
+ * CSS3 properties (such as transition and box-sizing) so you don't have
+ * to write them all out each time.
  */
 @import "compass/css3";
 
@@ -20,55 +23,6 @@ $red: #771717;
 $gray: #D0D0D0;
 $taupe: #85745F;
 
-/* Responsive Breakpoints */
-
-$bp-medium: 600px;
-$bp-large: 900px;
-
-/* Default Font Size */
-
-$default-font-size: 13px !default;
-
-
-/**
- * Functions
- * Formulae to return needed values in our code.
- */
-
-@function calc-percent($target, $context) {
-  @return ($target / $context) * 100%;
-}
-
-@function cp($target, $context) {
-  @return calc-percent($target, $context);
-}
-
-@function calc-em($target, $context) {
-  @return ($target / $context) * 1em;
-}
-
-@function ce($target, $context) {
-  @return calc-em($target, $context);
-}
-
-@function calc-rem($target, $context: $default-font-size) {
-	@return ($target / $context) * 1rem;
-}
-
-@function cr($target, $context: $default-font-size) {
-	@return calc-rem($target, $context);
-}
-
-
-/**
- * Mixins
- * Use these when you need to calculate and then output CSS
- */
-
-@mixin rem($property, $value, $context: $default-font-size) {
-	#{$property}: $value;
-	#{$property}: cr($value, $context);
-}
 
 /**
  * Fonts
