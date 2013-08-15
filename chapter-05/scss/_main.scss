@@ -1,24 +1,30 @@
 main {
-  background-color: #FFFFFF;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  margin-bottom: 1px;
-  padding: 1.38461538461538em 3.75%;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+	margin-bottom: 1px;
+	padding: 1.38461538461538em 3.75%;
 
-  @media only all and (min-width: $bp-medium) {
-    float: right;
-    margin-bottom: ce(10px, 13px);
-    width: cp(420px, 640px);
-  }
+	@include bp(medium) {
+		float: right;
+		margin-bottom: ce(10px, 13px);
+		padding: ce(10px, 13px) cp(10px, 640px);
+		width: cp(420px, 640px);
+	}
 
-  h1 {
-    font-size: 1.38461538461538em; /* 18px / 13px */
-    font-weight: bold;
-    margin-bottom: 1em;
-  }
+	@include bp(large) {
+		float: left;
+		width: cp(584px, 1024px);
+	}
 
-  p {
-    margin: 0.5em 0;
-  }
+	h1 {
+		font-size: ce(18px, 13px);
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin: 0.5em 0;
+	}
 }
 
 
@@ -26,32 +32,35 @@ main {
  * Archive Page Styling
  */
 
-.archive-title {
-  font-size: 1.53846153846154em; /* 20px / 13px */
-  font-weight: 600;
-  margin-bottom: 2.6em; /* 52px / 20px */
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
+.page-title {
+	font-size: 1.53846153846154em; /* 20px / 13px */
+	font-weight: 600;
+	margin: 20px 0 32px;
+	margin: cr(20px) 0 cr(32px);
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+	text-transform: uppercase;
 }
 
 .post {
-  margin-bottom: 4em;
+	margin-bottom: 4em;
 
-  /* Featured Image */
-  .attachment-post-thumbnail {
-    display: block;
-    margin: 1em auto 0.5em;
-  }
+	/* Featured Image */
+	.attachment-post-thumbnail {
+		display: block;
+		margin: 1em auto 0.5em;
+	}
 
-  .entry-title {
-    margin: 0.5em 0;
-  }
+	.entry-title {
+		margin: 1em 0;
+		text-align: center;
+	}
 
-  .content-meta {
-    font-size: 0.92307692307692em; /* 12px / 13px */
-    font-weight: 700;
-    margin: 0.5em 0;
-  }
+	.content-meta {
+		font-size: 0.92307692307692em; /* 12px / 13px */
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0.5em 0;
+	}
 }
 
 
@@ -60,58 +69,63 @@ main {
  */
 
 %nav-next-previous-a-psuedo-elements {
-  background-color: $taupe;
-  border-radius: 100em;
-  color: #FFFFFF;
-  display: block;
-  font-family: genericons;
-  font-size: 2em; /* 36px / 18px */
-  font-style: normal;
-  height: 1.11111111111111em; /* 40px / 36px */
-  line-height: 1.11111111111111em; /* 40px / 36px */
-  text-align: center;
-  width: 1.11111111111111em; /* 40px / 36px */
+	background-color: $taupe;
+	border-radius: 100em;
+	color: #FFFFFF;
+	display: block;
+	font-family: genericons;
+	font-size: 2em; /* 36px / 18px */
+	font-style: normal;
+	height: 1.11111111111111em; /* 40px / 36px */
+	left: 50%;
+	line-height: 1.11111111111111em; /* 40px / 36px */
+	margin-left: ce(-20px, 36px);
+	position: absolute;
+	text-align: center;
+	top: -100%;
+	width: 1.11111111111111em; /* 40px / 36px */
+
+	@include transition(background-color 0.2s linear);
 }
 
 .nav-next-previous {
-  @extend .clearfix;
+	@extend %clearfix !optional;
+	margin-top: 5em;
 
-  a {
-    color: $taupe;
-    display: block;
-    font-size: 1.38461538461538em; /* 18px / 13px */
-    font-style: italic;
-    line-height: 2.22222222222222em; /* 40px / 18px */
+	a {
+		color: $taupe;
+		display: block;
+		font-size: 1.38461538461538em; /* 18px / 13px */
+		font-style: italic;
+		line-height: 2;
+		position: relative;
 
-    &.nav-previous {
-      float: right;
+		@include transition(color 0.2s linear);
 
-      &:after {
-        @extend %nav-next-previous-a-psuedo-elements;
-        content: '\f429';
-        float: right;
-        margin-left: 10px;
-      }
-    }
+		&.nav-previous {
+			float: right;
 
-    &.nav-next {
-      float: left;
+			&:after {
+				@extend %nav-next-previous-a-psuedo-elements;
+				content: '\f429';
+			}
+		}
 
-      &:before {
-        @extend %nav-next-previous-a-psuedo-elements;
+		&.nav-next {
+			float: left;
 
-        content: '\f430';
-        float: left;
-        margin-right: 10px;
-      }
-    }
+			&:before {
+				@extend %nav-next-previous-a-psuedo-elements;
+				content: '\f430';
+			}
+		}
 
-    &:hover, &:active, &:focus {
-      color: $red;
+		&:hover, &:active, &:focus {
+			color: $red;
 
-      &:before, &:after {
-        background-color: $red;
-      }
-    }
-  }
+			&:before, &:after {
+				background-color: $red;
+			}
+		}
+	}
 }
